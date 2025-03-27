@@ -1,13 +1,16 @@
 import React from "react";
-import MapComponent from "global-south-gis/frontend/src/components/MapComponent.js";
+import './App.css'
+import 'mapbox-gl/dist/mapbox-gl.css';
+import MapComponent from "./components/MapComponent.js";
 
-function App() {
+const App = () => {
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
-      <MapComponent />
+    <div>
+      <h1>Global South Borders</h1>
+      <MapComponent /> {/* Render the MapComponent */}
     </div>
   );
-}
+};
 
 export default App;
 
